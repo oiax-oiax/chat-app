@@ -1,0 +1,121 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.chat-button {
+  height: 50px;
+  width: 50px;
+  border-radius: 50%;
+  position: fixed;
+  bottom: 30px;
+  right: 30px;
+  cursor: pointer;
+  box-shadow: 0px 0px 15px -5px #888;
+}
+.chat-button.active {
+  display: none;
+}
+
+.chat-area {
+  display: none;
+}
+.chat-area.active {
+  display: block;
+  height: 400px;
+  width: 350px;
+  padding: 20px;
+  background-color: #f9dbba;
+  overflow: hidden;
+  overflow-y: scroll;
+  position: fixed;
+  right: 20px;
+  bottom: 20px;
+  border-radius: 10px;
+  box-shadow: 0px 0px 15px -5px #333;
+}
+
+#question-container {
+  position: relative;
+  margin-top: 30px;
+}
+
+#chat-bot {
+  height: 30px;
+  width: 30px;
+  border-radius: 50%;
+  -o-object-fit: cover;
+     object-fit: cover;
+  position: absolute;
+  top: -35px;
+  right: 5px;
+}
+
+.fukidashi {
+  position: absolute;
+  top: -10px;
+  right: 35px;
+  width: 20px;
+  height: 30px;
+  transform: rotate(60deg);
+  background-color: #97e7e1;
+}
+
+#current-question {
+  height: 100%;
+  width: 100%;
+  background-color: #97e7e1;
+  border-radius: 10px;
+  padding: 10px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+  z-index: 1;
+}
+
+.current-question-text {
+  display: block;
+  height: auto;
+  width: auto;
+}
+
+#options-container {
+  width: 100%;
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  flex-wrap: wrap;
+  margin-top: 7px;
+}
+
+.option {
+  margin: 5px;
+  background-color: #97e7e1;
+  padding: 5px 10px;
+  border: none;
+  border-radius: 10px;
+  transition: all 0.3s ease-in-out;
+  cursor: pointer;
+}
+.option:hover {
+  color: white;
+  background-color: #7aa2e3;
+}
+
+.chat-quit {
+  background-color: #6ad4dd;
+  height: 30px;
+  width: 30px;
+  margin: 0 auto;
+  display: grid;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  position: absolute;
+  right: -5px;
+  bottom: -15px;
+  border-radius: 50%;
+}/*# sourceMappingURL=chat.css.map */
