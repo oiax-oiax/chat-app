@@ -1,6 +1,6 @@
 <?php
 session_start();
-require_once 'questions_data.php';
+$question_tree = require 'questions_data.php';
 
 if (!isset($_SESSION['chat_history'])) {
     $_SESSION['chat_history'] = [];

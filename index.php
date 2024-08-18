@@ -16,7 +16,7 @@
         .article-wrapper {
             height: 100%;
             width: 100%;
-            background-color: aqua;
+            background-color: #777;
         }
     </style>
 </head>
