@@ -1,3 +1,4 @@
+$chat-frame: rgb(1, 55, 77);
 $chat-area: #f9dbba;
 $fukidashi: #97e7e1;
 $option-hover: #7aa2e3;
@@ -14,8 +15,8 @@ $quit-button: #6ad4dd;
   width: 50px;
   border-radius: 50%;
   position: fixed;
-  bottom: 30px;
-  right: 30px;
+  bottom: 50px;
+  right: 50px;
   cursor: pointer;
   box-shadow: 0px 0px 15px -5px #888;
   &.active {
@@ -26,20 +27,29 @@ $quit-button: #6ad4dd;
 .chat-area {
   display: none;
   &.active {
-    display: block;
-    height: 400px;
-    width: 350px;
-    padding: 20px;
-    background-color: $chat-area;
-    overflow: hidden;
-    overflow-y: scroll;
+    display: grid;
+    justify-items: center;
+    align-items: center;
+    width: 330px;
+    height: 430px;
+    background-color: $chat-frame;
     position: fixed;
     right: 20px;
     bottom: 20px;
-    border-radius: 10px;
     box-shadow: 0px 0px 15px -5px #333;
   }
 }
+
+.chat-wrapper {
+  width: 320px;
+  height: 420px;
+  padding: 20px;
+  overflow: hidden;
+  overflow-y: scroll;
+  border-radius: 10px;
+  background-color: $chat-area;
+}
+
 #question-container {
   position: relative;
   margin-top: 30px;

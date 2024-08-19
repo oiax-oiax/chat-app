@@ -42,7 +42,7 @@ document.addEventListener("DOMContentLoaded", function () {
           setTimeout(() => {
             const questionContainer =
               document.getElementById("question-container");
-            const chatArea = document.querySelector(".chat-area");
+            const chatArea = document.querySelector(".chat-wrapper");
             const rect = questionContainer.getBoundingClientRect();
             const chatAreaRect = chatArea.getBoundingClientRect();
             const scrollTop = chatArea.scrollTop;
