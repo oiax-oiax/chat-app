@@ -1,4 +1,12 @@
 <?php
+
+session_start();
+
+if (!isset($_SESSION['logged_in']) || $_SESSION['logged_in'] !== true) {
+    header('Location: login.php');
+    exit;
+}
+
 // データファイルの読み込み
 $question_tree = include 'questions_data.php';
 
@@ -100,6 +108,9 @@ function saveQuestionTree($data)
 </head>
 
 <body>
+    <div style="text-align: right; margin: 10px;">
+        <a href="logout.php"><button>ログアウト</button></a>
+    </div>
     <div class="edit-area">
 
         <h1>質問ツリー管理</h1>
